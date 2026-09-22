@@ -35,7 +35,7 @@ export function ContactSection({ content, profile }: { content: ContactContent; 
                       href={row.href}
                       target={row.href.startsWith("http") ? "_blank" : undefined}
                       rel={row.href.startsWith("http") ? "noreferrer" : undefined}
-                      className="text-ink-900 hover:text-ember-600"
+                      className="text-ink-900 hover:text-blue-600"
                     >
                       {row.value}
                     </a>

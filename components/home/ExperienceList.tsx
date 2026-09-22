@@ -14,7 +14,7 @@ export function ExperienceList({ content }: { content: ExperienceContent }) {
               <p className="font-mono text-xs uppercase tracking-[0.1em] text-ink-400">{entry.period}</p>
               <div>
                 <h3 className="font-display text-lg font-medium text-ink-900">{entry.role}</h3>
-                <p className="text-sm text-ember-600">{entry.organization}</p>
+                <p className="text-sm text-blue-600">{entry.organization}</p>
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-600">{entry.description}</p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {entry.tags.map((tag) => (

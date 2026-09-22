@@ -5,9 +5,9 @@ import { ArrowUpRight } from "lucide-react";
 type Variant = "primary" | "secondary" | "ghost";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-ink-900 text-paper hover:bg-ember-600",
+  primary: "bg-ink-900 text-paper hover:bg-blue-600",
   secondary: "border border-ink-300 text-ink-800 hover:border-ink-900",
-  ghost: "text-ink-700 hover:text-ember-600",
+  ghost: "text-ink-700 hover:text-blue-600",
 };
 
 export function Button({

@@ -22,27 +22,30 @@ const config: Config = {
           800: "#181B20",
           900: "#0E1116",
         },
-        paper: "#FAF9F6",
-        ember: {
-          DEFAULT: "#C4622D",
-          50: "#FBF0E9",
-          100: "#F5DBC8",
-          400: "#D98653",
-          500: "#C4622D",
-          600: "#A24E22",
+        paper: "#FFFFFF",
+        blue: {
+          DEFAULT: "#037EF3",
+          50: "#E6F2FE",
+          100: "#CCE4FD",
+          400: "#2E97F5",
+          500: "#037EF3",
+          600: "#0264C2",
         },
-        signal: {
-          DEFAULT: "#2E6F5E",
-          50: "#EAF3F0",
-          400: "#4C9884",
-          500: "#2E6F5E",
-          600: "#22574A",
+        green: {
+          DEFAULT: "#1BBA6F",
+          50: "#E8FBF2",
+          100: "#C9F5E1",
+          400: "#3FCB86",
+          500: "#1BBA6F",
+          600: "#159259",
         },
-        connect: {
-          DEFAULT: "#2B5FA5",
-          50: "#EAF1FA",
-          400: "#5488C7",
-          500: "#2B5FA5",
+        gold: {
+          DEFAULT: "#D4AF37",
+          50: "#FBF6E7",
+          100: "#F3E7B8",
+          400: "#E0C158",
+          500: "#D4AF37",
+          600: "#AB8A2C",
         },
       },
       fontFamily: {
@@ -56,11 +59,16 @@ const config: Config = {
       },
       animation: {
         "fade-up": "fadeUp 0.7s ease-out forwards",
+        marquee: "marquee 28s linear infinite",
       },
       keyframes: {
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },

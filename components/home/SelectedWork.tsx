@@ -19,7 +19,7 @@ export function SelectedWork({ content, lang }: { content: SelectedWorkContent; 
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-600">{item.description}</p>
               <Link
                 href={withLang(lang, item.href)}
-                className="mt-4 inline-flex w-fit items-center gap-1.5 border-b border-ink-900 pb-0.5 text-sm font-medium text-ink-900 hover:border-ember-500 hover:text-ember-600"
+                className="mt-4 inline-flex w-fit items-center gap-1.5 border-b border-ink-900 pb-0.5 text-sm font-medium text-ink-900 hover:border-blue-500 hover:text-blue-600"
               >
                 {item.cta}
               </Link>

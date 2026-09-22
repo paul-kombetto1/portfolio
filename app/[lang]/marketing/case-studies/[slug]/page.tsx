@@ -61,11 +61,11 @@ export default function CaseStudyDetailPage({ params }: { params: { lang: string
       <Section className="border-t border-ink-200/70">
         <div className="grid gap-10 sm:grid-cols-2">
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-connect-500">{t.context}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-green-600">{t.context}</h3>
             <p className="mt-3 text-[15px] leading-relaxed text-ink-600">{cs.context}</p>
           </div>
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-connect-500">{t.challenge}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-green-600">{t.challenge}</h3>
             <p className="mt-3 text-[15px] leading-relaxed text-ink-600">{cs.challenge}</p>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function CaseStudyDetailPage({ params }: { params: { lang: string
       </Section>
 
       <Section className="border-t border-ink-200/70">
-        <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-connect-500">{t.work}</h3>
+        <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-green-600">{t.work}</h3>
         <ul className="mt-4 flex flex-wrap gap-2">
           {cs.workDone.map((item) => (
             <li key={item} className="rounded-full border border-ink-200 px-3.5 py-1.5 text-sm text-ink-700">
@@ -87,7 +87,7 @@ export default function CaseStudyDetailPage({ params }: { params: { lang: string
             </li>
           ))}
         </ul>
-        <p className="mt-10 max-w-prose border-l-2 border-connect-500 pl-4 font-display text-lg italic text-ink-800">
+        <p className="mt-10 max-w-prose border-l-2 border-green-600 pl-4 font-display text-lg italic text-ink-800">
           {cs.lesson}
         </p>
       </Section>

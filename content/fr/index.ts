@@ -8,12 +8,37 @@ const fr: SiteDictionary = {
   },
   nav: {
     brand: "Paul Kombetto",
-    links: [
-      { label: "AI & IoT", href: "/ai-iot" },
-      { label: "Digital Marketing", href: "/marketing" },
-      { label: "Leadership", href: "/leadership" },
-      { label: "Contact", href: "/#contact" },
+    exploreLabel: "Explorer",
+    exploreTitle: "Une personne. Plusieurs dimensions.",
+    exploreIntro: "Trois espaces, trois façons de me découvrir plus en profondeur.",
+    exploreLinks: [
+      {
+        index: "01",
+        label: "AI & IoT",
+        keyword: "Construire",
+        description: "Systèmes connectés et intelligents.",
+        href: "/ai-iot",
+        variant: "ai",
+      },
+      {
+        index: "02",
+        label: "Digital Marketing",
+        keyword: "Connecter",
+        description: "Stratégie, contenu et développement commercial.",
+        href: "/marketing",
+        variant: "marketing",
+      },
+      {
+        index: "03",
+        label: "Leadership & Volunteering",
+        keyword: "Faire avancer",
+        description: "Communication, communauté et engagement.",
+        href: "/leadership",
+        variant: "leadership",
+      },
     ],
+    contactLabel: "Contact",
+    closeLabel: "Fermer",
     languageLabel: "Langue",
   },
   profile: {
@@ -35,6 +60,9 @@ const fr: SiteDictionary = {
         { label: "Découvrir mon parcours", href: "#story" },
         { label: "Me contacter", href: "#contact" },
       ],
+      soundLabel: "Son",
+      soundPlayingLabel: "En lecture",
+      scrollCue: "Faire défiler",
     },
     intro: {
       text: "Formé aux systèmes embarqués et à l'IoT, j'ai progressivement élargi mon terrain d'action vers le digital, le développement de projets, la communication et le leadership. Aujourd'hui, je cherche à comprendre les problèmes dans leur ensemble, construire des solutions utiles et contribuer à faire avancer les personnes et les projets qui les portent.",

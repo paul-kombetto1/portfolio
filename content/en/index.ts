@@ -8,12 +8,37 @@ const en: SiteDictionary = {
   },
   nav: {
     brand: "Paul Kombetto",
-    links: [
-      { label: "AI & IoT", href: "/ai-iot" },
-      { label: "Digital Marketing", href: "/marketing" },
-      { label: "Leadership", href: "/leadership" },
-      { label: "Contact", href: "/#contact" },
+    exploreLabel: "Explore",
+    exploreTitle: "One person. Multiple dimensions.",
+    exploreIntro: "Three spaces, three ways to go deeper.",
+    exploreLinks: [
+      {
+        index: "01",
+        label: "AI & IoT",
+        keyword: "Build",
+        description: "Connected and intelligent systems.",
+        href: "/ai-iot",
+        variant: "ai",
+      },
+      {
+        index: "02",
+        label: "Digital Marketing",
+        keyword: "Connect",
+        description: "Strategy, content and commercial development.",
+        href: "/marketing",
+        variant: "marketing",
+      },
+      {
+        index: "03",
+        label: "Leadership & Volunteering",
+        keyword: "Move forward",
+        description: "Communication, community and engagement.",
+        href: "/leadership",
+        variant: "leadership",
+      },
     ],
+    contactLabel: "Contact",
+    closeLabel: "Close",
     languageLabel: "Language",
   },
   profile: {
@@ -35,6 +60,9 @@ const en: SiteDictionary = {
         { label: "Discover my journey", href: "#story" },
         { label: "Get in touch", href: "#contact" },
       ],
+      soundLabel: "Sound",
+      soundPlayingLabel: "Playing",
+      scrollCue: "Scroll",
     },
     intro: {
       text: "Trained in embedded systems and IoT, I gradually broadened my scope toward digital, project development, communication and leadership. Today, I try to understand problems as a whole, build useful solutions, and help move forward the people and projects that carry them.",

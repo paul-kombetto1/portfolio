@@ -17,9 +17,23 @@ export interface NavLink {
   href: string;
 }
 
+export interface ExploreLink {
+  index: string;
+  label: string;
+  keyword: string;
+  description: string;
+  href: string;
+  variant: "ai" | "marketing" | "leadership";
+}
+
 export interface Navigation {
   brand: string;
-  links: NavLink[];
+  exploreLabel: string;
+  exploreTitle: string;
+  exploreIntro: string;
+  exploreLinks: ExploreLink[];
+  contactLabel: string;
+  closeLabel: string;
   languageLabel: string;
 }
 
@@ -39,6 +53,9 @@ export interface HeroContent {
   headline: string;
   media: Media;
   ctas: Cta[];
+  soundLabel: string;
+  soundPlayingLabel: string;
+  scrollCue: string;
 }
 
 export interface ProseBlock {

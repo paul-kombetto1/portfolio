@@ -2,6 +2,7 @@ import type { ProseBlock } from "@/lib/types";
 import type { MediaVariant } from "@/components/ui/MediaSlot";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
+import { ACCENT_TEXT, ACCENT_BORDER } from "@/components/ui/accent";
 
 export function ProseSection({
   block,
@@ -21,7 +22,7 @@ export function ProseSection({
       </RevealOnScroll>
       <RevealOnScroll className={imageFirst ? "lg:order-2" : "lg:order-1"} delay={0.1}>
         {block.eyebrow && (
-          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-ember-500">{block.eyebrow}</p>
+          <p className={`mb-3 font-mono text-xs uppercase tracking-[0.2em] ${ACCENT_TEXT[variant]}`}>{block.eyebrow}</p>
         )}
         <h2 className="text-balance font-display text-2xl font-medium leading-snug text-ink-900 sm:text-3xl">
           {block.title}
@@ -32,7 +33,7 @@ export function ProseSection({
           ))}
         </div>
         {block.emphasis && (
-          <p className="mt-6 border-l-2 border-ember-500 pl-4 font-display text-lg italic text-ink-800">
+          <p className={`mt-6 border-l-2 ${ACCENT_BORDER[variant]} pl-4 font-display text-lg italic text-ink-800`}>
             {block.emphasis}
           </p>
         )}

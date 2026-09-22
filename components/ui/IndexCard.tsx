@@ -4,6 +4,7 @@ import type { Media } from "@/lib/types";
 import type { MediaVariant } from "@/components/ui/MediaSlot";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
+import { ACCENT_GROUP_HOVER } from "@/components/ui/accent";
 
 export function IndexCard({
   href,
@@ -31,7 +32,9 @@ export function IndexCard({
         <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-400">{tag}</p>
         <h3 className="mt-2 font-display text-xl font-medium text-ink-900">{title}</h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-600">{description}</p>
-        <span className="mt-4 inline-flex w-fit items-center gap-1.5 border-b border-ink-900 pb-0.5 text-sm font-medium text-ink-900 group-hover:border-ember-500 group-hover:text-ember-600">
+        <span
+          className={`mt-4 inline-flex w-fit items-center gap-1.5 border-b border-ink-900 pb-0.5 text-sm font-medium text-ink-900 ${ACCENT_GROUP_HOVER[variant]}`}
+        >
           {cta}
           <ArrowUpRight size={14} />
         </span>

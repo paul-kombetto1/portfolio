@@ -12,10 +12,10 @@ const ICONS: Record<MediaVariant, typeof Cpu> = {
 };
 
 const SURFACES: Record<MediaVariant, string> = {
-  default: "bg-gradient-to-br from-ember-50 via-paper to-ink-100 text-ember-500",
-  ai: "bg-gradient-to-br from-ink-900 via-ink-800 to-signal-600 text-signal-400",
-  marketing: "bg-gradient-to-br from-connect-50 via-paper to-connect-500/20 text-connect-500",
-  leadership: "bg-gradient-to-br from-ember-100 via-paper to-ember-50 text-ember-500",
+  default: "bg-gradient-to-br from-black via-ink-900 to-blue-600 text-blue-400",
+  ai: "bg-gradient-to-br from-black via-ink-900 to-blue-600 text-blue-400",
+  marketing: "bg-gradient-to-br from-white via-green-50 to-green-500/30 text-green-600",
+  leadership: "bg-gradient-to-br from-black via-ink-900 to-gold-500/40 text-gold-400",
 };
 
 const ASPECTS: Record<string, string> = {
@@ -49,7 +49,7 @@ export function MediaSlot({
       <figure className={`relative overflow-hidden ${rounded} ${aspectClass} ${className}`}>
         <Image src={media.src} alt={media.alt} fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />
         {media.caption && (
-          <figcaption className="absolute inset-x-0 bottom-0 bg-ink-900/70 px-4 py-2 text-xs text-paper">
+          <figcaption className="absolute inset-x-0 bottom-0 bg-black/70 px-4 py-2 text-xs text-white">
             {media.caption}
           </figcaption>
         )}

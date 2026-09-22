@@ -5,6 +5,7 @@ import type { MediaVariant } from "@/components/ui/MediaSlot";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { Container } from "@/components/ui/Container";
+import { ACCENT_TEXT } from "@/components/ui/accent";
 
 export function DetailHeader({
   backHref,
@@ -30,7 +31,7 @@ export function DetailHeader({
           <ArrowLeft size={15} />
           {backLabel}
         </Link>
-        <p className="mt-6 font-mono text-xs uppercase tracking-[0.16em] text-ember-500">{tag}</p>
+        <p className={`mt-6 font-mono text-xs uppercase tracking-[0.16em] ${ACCENT_TEXT[variant]}`}>{tag}</p>
         <h1 className="mt-3 text-balance font-display text-3xl font-medium leading-tight text-ink-900 sm:text-4xl">
           {title}
         </h1>

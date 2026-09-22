@@ -73,15 +73,15 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
       <Section className="border-t border-ink-200/70">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.context}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.context}</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-600">{project.context}</p>
           </div>
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.problem}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.problem}</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-600">{project.problem}</p>
           </div>
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.concept}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.concept}</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-600">{project.concept}</p>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
       <Section className="border-t border-ink-200/70">
         <div className="grid gap-10 sm:grid-cols-2">
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.hardware}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.hardware}</h3>
             <ul className="mt-4 space-y-2">
               {project.hardware.map((item) => (
                 <li key={item} className="border-b border-ink-100 pb-2 text-sm text-ink-700">
@@ -108,7 +108,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
             </ul>
           </div>
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.software}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.software}</h3>
             <ul className="mt-4 space-y-2">
               {project.software.map((item) => (
                 <li key={item} className="border-b border-ink-100 pb-2 text-sm text-ink-700">
@@ -122,7 +122,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
       </Section>
 
       <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
-        <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.role}</h3>
+        <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.role}</h3>
         <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-ink-600">{project.role}</p>
       </Section>
 
@@ -137,7 +137,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
       <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
         <div className="grid gap-10 sm:grid-cols-2">
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.learnings}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.learnings}</h3>
             <ul className="mt-4 space-y-3">
               {project.learnings.map((item) => (
                 <li key={item} className="text-[15px] leading-relaxed text-ink-700">
@@ -147,7 +147,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
             </ul>
           </div>
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-ember-500">{t.future}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.future}</h3>
             <ul className="mt-4 flex flex-wrap gap-2">
               {project.futureImprovements.map((item) => (
                 <li key={item} className="rounded-full border border-ink-200 px-3 py-1 text-xs text-ink-600">
