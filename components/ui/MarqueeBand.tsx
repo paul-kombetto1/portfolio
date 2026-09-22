@@ -1,6 +1,6 @@
 const THEMES: Record<"light" | "dark" | "blue" | "green" | "gold", string> = {
-  light: "bg-blue-700 text-white border-y border-white/15",
-  dark: "bg-black text-white",
+  light: "bg-paper text-ink-900 border-y border-ink-200/70",
+  dark: "bg-blue-700 text-white",
   blue: "bg-blue-500 text-white",
   green: "bg-green-600 text-white",
   gold: "bg-gold-500 text-black",

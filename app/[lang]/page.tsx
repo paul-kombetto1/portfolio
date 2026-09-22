@@ -14,7 +14,7 @@ import { ExperienceList } from "@/components/home/ExperienceList";
 import { ContactSection } from "@/components/home/ContactSection";
 import { withLang } from "@/lib/navigation";
 
-const PANEL_THEME: Array<"light" | "dark"> = ["dark", "light", "dark"];
+const PANEL_THEME: Array<"light" | "dark"> = ["light", "dark", "dark"];
 const CTA_LABEL: Record<string, string> = { fr: "Explorer", en: "Explore" };
 
 export default function HomePage({ params }: { params: { lang: string } }) {
@@ -28,7 +28,7 @@ export default function HomePage({ params }: { params: { lang: string } }) {
     <>
       <Hero hero={home.hero} />
 
-      <MarqueeBand text={home.whatIDo.title} theme="dark" />
+      <MarqueeBand text={home.whatIDo.title} theme="light" />
 
       <Section className="border-t border-white/10 bg-blue-700">
         <RevealOnScroll>
@@ -45,18 +45,23 @@ export default function HomePage({ params }: { params: { lang: string } }) {
           className="mb-10 max-w-3xl text-balance font-display text-3xl font-medium leading-[1.05] text-ink-900 sm:text-5xl"
         />
         <div className="grid gap-12 lg:grid-cols-[1.4fr,1fr]">
-          <div className="space-y-4 text-[15px] leading-relaxed text-ink-600 sm:text-lg">
-            {home.story.paragraphs.map((p) => (
-              <p key={p.slice(0, 24)}>{p}</p>
-            ))}
+          <div>
+            <div className="space-y-4 text-[15px] leading-relaxed text-ink-600 sm:text-lg">
+              {home.story.paragraphs.map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </div>
+            {home.story.emphasis && (
+              <p className="mt-6 border-l-2 border-blue-500 pl-4 font-display text-xl italic text-ink-900">
+                {home.story.emphasis}
+              </p>
+            )}
           </div>
           <RevealOnScroll delay={0.1}>
             <MediaSlot media={home.story.media} aspect="portrait" />
           </RevealOnScroll>
         </div>
       </Section>
-
-      {home.story.emphasis && <ManifestoQuote quote={home.story.emphasis} theme="dark" />}
 
       <div>
         {home.whatIDo.dimensions.map((dimension, i) => {
@@ -78,8 +83,6 @@ export default function HomePage({ params }: { params: { lang: string } }) {
           );
         })}
       </div>
-
-      <MarqueeBand text="Technology × Digital × Leadership" theme="blue" />
 
       <Section className="border-t border-ink-200/70">
         <SelectedWork content={home.selectedWork} lang={lang} />

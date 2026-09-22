@@ -58,12 +58,13 @@ export default function LeadershipPage({ params }: { params: { lang: string } })
 
   return (
     <>
-      <section className="relative flex min-h-[85svh] flex-col justify-center overflow-hidden bg-black py-24 text-white">
+      <section className="relative flex min-h-[70svh] flex-col justify-center overflow-hidden bg-blue-700 py-20 text-white">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-800 via-blue-700 to-blue-500" />
         <div
-          className="pointer-events-none absolute inset-0 opacity-70"
-          style={{ background: "radial-gradient(55% 45% at 85% 20%, rgba(212,175,55,0.18), transparent)" }}
+          className="pointer-events-none absolute inset-0 opacity-80"
+          style={{ background: "radial-gradient(55% 45% at 85% 20%, rgba(212,175,55,0.22), transparent)" }}
         />
-        <div className="grain-surface pointer-events-none absolute inset-0 text-white/[0.06]" />
+        <div className="grain-surface pointer-events-none absolute inset-0 text-white/[0.08]" />
         <div className="relative z-10 mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12">
           <RevealOnScroll>
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-gold-400">{leadership.hero.eyebrow}</p>
@@ -75,7 +76,7 @@ export default function LeadershipPage({ params }: { params: { lang: string } })
             className="mt-4 text-balance font-display text-5xl font-medium leading-[0.95] sm:text-7xl lg:text-8xl"
           />
           <RevealOnScroll delay={0.4}>
-            <p className="mt-6 max-w-2xl font-display text-xl italic text-gold-200/80 sm:text-2xl">
+            <p className="mt-6 max-w-2xl font-display text-xl italic text-gold-100/90 sm:text-2xl">
               {leadership.hero.subtitle}
             </p>
             <p className="mt-4 max-w-xl text-balance text-white/60">{leadership.hero.text}</p>

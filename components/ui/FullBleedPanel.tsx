@@ -5,9 +5,10 @@ import { SplitReveal } from "@/components/ui/SplitReveal";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ACCENT_TEXT, type SpaceVariant } from "@/components/ui/accent";
 
+// "dark" is the bold treatment — rendered in the brand blue, not black.
 const THEMES: Record<"light" | "dark", { bg: string; text: string; sub: string; border: string }> = {
-  light: { bg: "bg-blue-700", text: "text-white", sub: "text-white/70", border: "border-white/15" },
-  dark: { bg: "bg-black", text: "text-white", sub: "text-white/50", border: "border-white/10" },
+  light: { bg: "bg-paper", text: "text-ink-900", sub: "text-ink-500", border: "border-ink-200/70" },
+  dark: { bg: "bg-blue-700", text: "text-white", sub: "text-white/70", border: "border-white/15" },
 };
 
 export function FullBleedPanel({
@@ -43,7 +44,7 @@ export function FullBleedPanel({
   );
 
   return (
-    <section id={id} className={`flex min-h-[85vh] items-center border-t ${t.border} ${t.bg} py-20`}>
+    <section id={id} className={`flex min-h-[60vh] items-center border-t ${t.border} ${t.bg} py-16`}>
       <div className="mx-auto grid w-full max-w-content items-center gap-10 px-6 sm:px-8 lg:grid-cols-[auto,1fr,auto] lg:gap-16 lg:px-12">
         <RevealOnScroll className={`font-mono text-sm ${ACCENT_TEXT[variant]}`}>{index}</RevealOnScroll>
 
