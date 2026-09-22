@@ -2,7 +2,7 @@ import { SplitReveal } from "@/components/ui/SplitReveal";
 import { Container } from "@/components/ui/Container";
 
 const THEMES: Record<"light" | "dark", { bg: string; text: string; sub: string }> = {
-  light: { bg: "bg-paper", text: "text-ink-900", sub: "text-ink-500" },
+  light: { bg: "bg-blue-700", text: "text-white", sub: "text-white/70" },
   dark: { bg: "bg-black", text: "text-white", sub: "text-white/50" },
 };
 

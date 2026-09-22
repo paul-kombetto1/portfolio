@@ -9,20 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Dark-theme scale: same 9 tones as a conventional light-mode scale,
+        // reversed so text-ink-900 (headings) resolves near-white, text-ink-600
+        // (body copy) resolves light-gray, and border-ink-200 (dividers) resolves
+        // a low-contrast dark gray — all tuned for a black/blue canvas.
         ink: {
-          DEFAULT: "#0E1116",
-          50: "#F4F5F6",
-          100: "#E4E6E9",
-          200: "#C6CAD1",
-          300: "#9BA2AD",
-          400: "#6B7280",
-          500: "#4A5058",
-          600: "#363B42",
-          700: "#252930",
-          800: "#181B20",
-          900: "#0E1116",
+          DEFAULT: "#F6F7F8",
+          50: "#0E1116",
+          100: "#181B20",
+          200: "#262A31",
+          300: "#3C424B",
+          400: "#8791A0",
+          500: "#A6AEB8",
+          600: "#C2C8D0",
+          700: "#DADEE3",
+          800: "#ECEEF0",
+          900: "#F6F7F8",
         },
-        paper: "#FFFFFF",
+        paper: "#000000",
         blue: {
           DEFAULT: "#037EF3",
           50: "#E6F2FE",
@@ -30,6 +34,8 @@ const config: Config = {
           400: "#2E97F5",
           500: "#037EF3",
           600: "#0264C2",
+          700: "#024D96",
+          800: "#013A73",
         },
         green: {
           DEFAULT: "#1BBA6F",

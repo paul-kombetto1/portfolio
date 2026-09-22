@@ -4,7 +4,7 @@ import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 
 const THEMES: Record<"light" | "dark", { bg: string; text: string; sub: string; border: string }> = {
-  light: { bg: "bg-paper", text: "text-ink-900", sub: "text-ink-500", border: "border-ink-200/70" },
+  light: { bg: "bg-blue-700", text: "text-white", sub: "text-white/70", border: "border-white/15" },
   dark: { bg: "bg-black", text: "text-white", sub: "text-white/50", border: "border-white/10" },
 };
 
@@ -29,9 +29,7 @@ export function StoryChapter({
   return (
     <section className={`border-t py-20 sm:py-28 ${t.border} ${t.bg}`}>
       <div className="mx-auto grid w-full max-w-content gap-10 px-6 sm:px-8 lg:grid-cols-[auto,1fr,320px] lg:gap-16 lg:px-12">
-        <RevealOnScroll className={`font-mono text-sm ${theme === "dark" ? "text-gold-500" : "text-gold-600"}`}>
-          {index}
-        </RevealOnScroll>
+        <RevealOnScroll className="font-mono text-sm text-gold-400">{index}</RevealOnScroll>
 
         <div>
           <SplitReveal
@@ -42,14 +40,12 @@ export function StoryChapter({
           <div className="mt-8 space-y-6">
             {rows.map(([label, text]) => (
               <div key={label}>
-                <p className={`font-mono text-[11px] uppercase tracking-[0.18em] ${theme === "dark" ? "text-gold-500" : "text-gold-600"}`}>
-                  {label}
-                </p>
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-gold-400">{label}</p>
                 <p className={`mt-1.5 max-w-xl text-[15px] leading-relaxed ${t.sub}`}>{text}</p>
               </div>
             ))}
           </div>
-          <p className={`mt-8 max-w-xl border-l-2 pl-4 font-display text-xl italic leading-snug ${theme === "dark" ? "border-gold-500" : "border-gold-600"} ${t.text}`}>
+          <p className={`mt-8 max-w-xl border-l-2 border-gold-400 pl-4 font-display text-xl italic leading-snug ${t.text}`}>
             {story.lesson}
           </p>
         </div>

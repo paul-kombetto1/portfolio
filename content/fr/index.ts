@@ -4,10 +4,10 @@ const fr: SiteDictionary = {
   meta: {
     title: "Technologie. Digital. Leadership.",
     description:
-      "Portfolio de Paul Kombetto : ingénieur en systèmes embarqués et IoT, en évolution vers le digital, le marketing et le leadership. Construire, connecter, faire avancer.",
+      "Portfolio de Paul KOMBETTO : ingénieur en systèmes embarqués et IoT, en évolution vers le digital, le marketing et le leadership. Construire, connecter, faire avancer.",
   },
   nav: {
-    brand: "Paul Kombetto",
+    brand: "Paul KOMBETTO",
     exploreLabel: "Explorer",
     exploreTitle: "Une personne. Plusieurs dimensions.",
     exploreIntro: "Trois espaces, trois façons de me découvrir plus en profondeur.",
@@ -42,7 +42,7 @@ const fr: SiteDictionary = {
     languageLabel: "Langue",
   },
   profile: {
-    name: "Paul Kombetto",
+    name: "Paul KOMBETTO",
     location: "Cotonou, Bénin",
     email: "paulkombetto1@gmail.com",
     phone: "+229 01 63 42 04 44",
@@ -52,10 +52,10 @@ const fr: SiteDictionary = {
   home: {
     hero: {
       eyebrow: "Portfolio personnel",
-      name: "Paul Kombetto",
+      name: "Paul KOMBETTO",
       signature: "Technologie. Digital. Leadership.",
       headline: "Je construis mon parcours à l'intersection de la technologie, du digital et de l'humain.",
-      media: { alt: "Portrait de Paul Kombetto", label: "Hero — portrait professionnel" },
+      media: { alt: "Portrait de Paul KOMBETTO", label: "Hero — portrait professionnel" },
       ctas: [
         { label: "Découvrir mon parcours", href: "#story" },
         { label: "Me contacter", href: "#contact" },
@@ -66,7 +66,7 @@ const fr: SiteDictionary = {
     },
     intro: {
       text: "Formé aux systèmes embarqués et à l'IoT, j'ai progressivement élargi mon terrain d'action vers le digital, le développement de projets, la communication et le leadership. Aujourd'hui, je cherche à comprendre les problèmes dans leur ensemble, construire des solutions utiles et contribuer à faire avancer les personnes et les projets qui les portent.",
-      media: { alt: "Paul Kombetto dans son environnement de travail", label: "Intro — parcours / environnement de travail" },
+      media: { alt: "Paul KOMBETTO dans son environnement de travail", label: "Intro — parcours / environnement de travail" },
     },
     story: {
       eyebrow: "My story",
@@ -77,7 +77,7 @@ const fr: SiteDictionary = {
         "C'est ce qui m'a progressivement amené vers le digital, le marketing, le business development, le CRM, la gestion de projets et le leadership.",
       ],
       emphasis: "Construire des solutions. Comprendre les enjeux. Travailler avec les autres. Et apprendre à transformer les idées en actions.",
-      media: { alt: "Photo liée au parcours de Paul Kombetto", label: "Story — photo liée au parcours" },
+      media: { alt: "Photo liée au parcours de Paul KOMBETTO", label: "Story — photo liée au parcours" },
       imageSide: "right",
     },
     whatIDo: {
@@ -200,7 +200,7 @@ const fr: SiteDictionary = {
     contact: {
       title: "Construisons quelque chose d'utile.",
       text: "Une idée, un projet, une collaboration ou simplement une conversation intéressante : je suis toujours ouvert à découvrir de nouvelles opportunités.",
-      media: { alt: "Paul Kombetto — contact", label: "Contact — portrait discret" },
+      media: { alt: "Paul KOMBETTO — contact", label: "Contact — portrait discret" },
       emailLabel: "Email",
       phoneLabel: "Téléphone",
       locationLabel: "Localisation",
@@ -224,7 +224,7 @@ const fr: SiteDictionary = {
         "Puis une autre question est apparue : que faire de toutes ces données ? C'est là que mon intérêt pour l'IA et les systèmes intelligents s'est développé.",
       ],
       emphasis: "Je m'intéresse ainsi aux systèmes capables de percevoir, analyser et agir.",
-      media: { alt: "Parcours technique de Paul Kombetto", label: "Technical journey / diagram" },
+      media: { alt: "Parcours technique de Paul KOMBETTO", label: "Technical journey / diagram" },
       imageSide: "right",
     },
     stats: [
@@ -288,7 +288,7 @@ const fr: SiteDictionary = {
         "C'est ce qui m'a conduit vers le marketing digital, le contenu, le CRM, la prospection et le développement commercial.",
       ],
       emphasis: "Ce qui m'intéresse particulièrement : le point de rencontre entre produit, communication et business.",
-      media: { alt: "Parcours marketing de Paul Kombetto", label: "Marketing journey" },
+      media: { alt: "Parcours marketing de Paul KOMBETTO", label: "Marketing journey" },
       imageSide: "right",
     },
     caseStudiesTitle: "Case studies",
@@ -359,7 +359,7 @@ const fr: SiteDictionary = {
         "Mes expériences m'ont appris à communiquer, écouter, coordonner et prendre des responsabilités.",
         "Mais surtout, elles m'ont appris qu'avancer ne signifie pas tout faire seul. Le leadership, c'est aussi créer les conditions pour que les autres puissent prendre leur place, contribuer et progresser.",
       ],
-      media: { alt: "Histoire de leadership de Paul Kombetto", label: "Leadership story" },
+      media: { alt: "Histoire de leadership de Paul KOMBETTO", label: "Leadership story" },
       imageSide: "left",
     },
     experiencesTitle: "Experiences",

@@ -87,7 +87,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
         </div>
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <SectionHeading title={t.architecture} />
         <div className="mt-8 flex flex-col gap-10 lg:flex-row lg:items-start">
           <ArchitectureSteps steps={project.architectureSteps} />
@@ -121,7 +121,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
         <MediaSlot media={project.screenshot} variant="ai" aspect="wide" className="mt-10" />
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.role}</h3>
         <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-ink-600">{project.role}</p>
       </Section>
@@ -134,7 +134,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
         <MediaSlot media={project.video} variant="ai" aspect="wide" className="mt-10" />
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <div className="grid gap-10 sm:grid-cols-2">
           <div>
             <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-blue-500">{t.learnings}</h3>

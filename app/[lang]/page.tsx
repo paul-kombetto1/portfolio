@@ -30,9 +30,9 @@ export default function HomePage({ params }: { params: { lang: string } }) {
 
       <MarqueeBand text={home.whatIDo.title} theme="dark" />
 
-      <Section className="border-t border-ink-200/70">
+      <Section className="border-t border-white/10 bg-blue-700">
         <RevealOnScroll>
-          <p className="text-balance text-center font-display text-2xl leading-relaxed text-ink-800 sm:text-3xl">
+          <p className="text-balance text-center font-display text-2xl leading-relaxed text-white sm:text-3xl">
             {home.intro.text}
           </p>
         </RevealOnScroll>
@@ -85,7 +85,7 @@ export default function HomePage({ params }: { params: { lang: string } }) {
         <SelectedWork content={home.selectedWork} lang={lang} />
       </Section>
 
-      <Section className="border-t border-ink-200/70">
+      <Section className="border-t border-white/10 bg-blue-700">
         <ExperienceList content={home.experience} />
       </Section>
 
@@ -93,8 +93,8 @@ export default function HomePage({ params }: { params: { lang: string } }) {
         <ProseSection block={home.leadershipImpact} />
       </Section>
 
-      <Section className="border-t border-ink-200/70">
-        <div className="mx-auto max-w-2xl space-y-4 text-center text-[15px] leading-relaxed text-ink-600 sm:text-lg">
+      <Section className="border-t border-white/10 bg-blue-700">
+        <div className="mx-auto max-w-2xl space-y-4 text-center text-[15px] leading-relaxed text-white/80 sm:text-lg">
           {home.whatsNext.paragraphs.map((p) => (
             <p key={p.slice(0, 24)}>{p}</p>
           ))}

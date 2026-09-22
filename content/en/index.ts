@@ -4,10 +4,10 @@ const en: SiteDictionary = {
   meta: {
     title: "Technology. Digital. Leadership.",
     description:
-      "Paul Kombetto's portfolio: an embedded systems and IoT engineer moving into digital, marketing and leadership. Build, connect, move forward.",
+      "Paul KOMBETTO's portfolio: an embedded systems and IoT engineer moving into digital, marketing and leadership. Build, connect, move forward.",
   },
   nav: {
-    brand: "Paul Kombetto",
+    brand: "Paul KOMBETTO",
     exploreLabel: "Explore",
     exploreTitle: "One person. Multiple dimensions.",
     exploreIntro: "Three spaces, three ways to go deeper.",
@@ -42,7 +42,7 @@ const en: SiteDictionary = {
     languageLabel: "Language",
   },
   profile: {
-    name: "Paul Kombetto",
+    name: "Paul KOMBETTO",
     location: "Cotonou, Benin",
     email: "paulkombetto1@gmail.com",
     phone: "+229 01 63 42 04 44",
@@ -52,10 +52,10 @@ const en: SiteDictionary = {
   home: {
     hero: {
       eyebrow: "Personal portfolio",
-      name: "Paul Kombetto",
+      name: "Paul KOMBETTO",
       signature: "Technology. Digital. Leadership.",
       headline: "I am building my journey at the intersection of technology, digital and people.",
-      media: { alt: "Portrait of Paul Kombetto", label: "Hero — professional portrait" },
+      media: { alt: "Portrait of Paul KOMBETTO", label: "Hero — professional portrait" },
       ctas: [
         { label: "Discover my journey", href: "#story" },
         { label: "Get in touch", href: "#contact" },
@@ -66,7 +66,7 @@ const en: SiteDictionary = {
     },
     intro: {
       text: "Trained in embedded systems and IoT, I gradually broadened my scope toward digital, project development, communication and leadership. Today, I try to understand problems as a whole, build useful solutions, and help move forward the people and projects that carry them.",
-      media: { alt: "Paul Kombetto in his working environment", label: "Intro — journey / working environment" },
+      media: { alt: "Paul KOMBETTO in his working environment", label: "Intro — journey / working environment" },
     },
     story: {
       eyebrow: "My story",
@@ -200,7 +200,7 @@ const en: SiteDictionary = {
     contact: {
       title: "Let's build something useful.",
       text: "An idea, a project, a collaboration, or simply an interesting conversation — I'm always open to discovering new opportunities.",
-      media: { alt: "Paul Kombetto — contact", label: "Contact — discreet portrait" },
+      media: { alt: "Paul KOMBETTO — contact", label: "Contact — discreet portrait" },
       emailLabel: "Email",
       phoneLabel: "Phone",
       locationLabel: "Location",
@@ -224,7 +224,7 @@ const en: SiteDictionary = {
         "Then another question appeared: what do you do with all that data? That's where my interest in AI and intelligent systems grew.",
       ],
       emphasis: "I'm drawn to systems that can perceive, analyze and act.",
-      media: { alt: "Paul Kombetto's technical journey", label: "Technical journey / diagram" },
+      media: { alt: "Paul KOMBETTO's technical journey", label: "Technical journey / diagram" },
       imageSide: "right",
     },
     stats: [
@@ -288,7 +288,7 @@ const en: SiteDictionary = {
         "That's what led me toward digital marketing, content, CRM, prospecting and commercial development.",
       ],
       emphasis: "What interests me most: the meeting point between product, communication and business.",
-      media: { alt: "Paul Kombetto's marketing journey", label: "Marketing journey" },
+      media: { alt: "Paul KOMBETTO's marketing journey", label: "Marketing journey" },
       imageSide: "right",
     },
     caseStudiesTitle: "Case studies",
@@ -359,7 +359,7 @@ const en: SiteDictionary = {
         "My experiences taught me to communicate, listen, coordinate and take on responsibility.",
         "But above all, they taught me that moving forward doesn't mean doing everything alone. Leadership is also about creating the conditions for others to take their place, contribute, and grow.",
       ],
-      media: { alt: "Paul Kombetto's leadership story", label: "Leadership story" },
+      media: { alt: "Paul KOMBETTO's leadership story", label: "Leadership story" },
       imageSide: "left",
     },
     experiencesTitle: "Experiences",

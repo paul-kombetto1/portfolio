@@ -28,7 +28,7 @@ export default function AiIotPage({ params }: { params: { lang: string } }) {
         <ProseSection block={aiIot.technicalStory} variant="ai" />
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <dl className="grid gap-8 sm:grid-cols-3">
           {aiIot.stats.map((stat) => (
             <div key={stat.label}>

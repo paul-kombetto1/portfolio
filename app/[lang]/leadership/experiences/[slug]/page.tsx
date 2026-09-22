@@ -78,7 +78,7 @@ export default function ExperienceDetailPage({ params }: { params: { lang: strin
         )}
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <SectionHeading title={t.gallery} variant="leadership" />
         <div className="mt-8">
           <GalleryGrid items={exp.gallery} variant="leadership" />

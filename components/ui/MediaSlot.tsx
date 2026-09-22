@@ -12,10 +12,10 @@ const ICONS: Record<MediaVariant, typeof Cpu> = {
 };
 
 const SURFACES: Record<MediaVariant, string> = {
-  default: "bg-gradient-to-br from-black via-ink-900 to-blue-600 text-blue-400",
-  ai: "bg-gradient-to-br from-black via-ink-900 to-blue-600 text-blue-400",
-  marketing: "bg-gradient-to-br from-white via-green-50 to-green-500/30 text-green-600",
-  leadership: "bg-gradient-to-br from-black via-ink-900 to-gold-500/40 text-gold-400",
+  default: "bg-gradient-to-br from-black via-ink-100 to-blue-600 text-blue-400",
+  ai: "bg-gradient-to-br from-black via-ink-100 to-blue-600 text-blue-400",
+  marketing: "bg-gradient-to-br from-black via-ink-100 to-green-600 text-green-400",
+  leadership: "bg-gradient-to-br from-black via-ink-100 to-gold-500/60 text-gold-400",
 };
 
 const ASPECTS: Record<string, string> = {

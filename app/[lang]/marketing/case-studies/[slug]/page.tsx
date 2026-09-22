@@ -71,7 +71,7 @@ export default function CaseStudyDetailPage({ params }: { params: { lang: string
         </div>
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <SectionHeading title={t.approach} />
         <div className="mt-8">
           <ArchitectureSteps steps={cs.approachSteps} />
@@ -92,7 +92,7 @@ export default function CaseStudyDetailPage({ params }: { params: { lang: string
         </p>
       </Section>
 
-      <Section className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section className="border-t border-white/10 bg-blue-700">
         <SectionHeading title="Gallery" />
         <div className="mt-8">
           <GalleryGrid items={cs.gallery} variant="marketing" />

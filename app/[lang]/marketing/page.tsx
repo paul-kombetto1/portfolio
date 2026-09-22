@@ -28,7 +28,7 @@ export default function MarketingPage({ params }: { params: { lang: string } }) 
         <ProseSection block={marketing.journey} variant="marketing" />
       </Section>
 
-      <Section id="case-studies" className="border-t border-ink-200/70 bg-ink-900/[0.02]">
+      <Section id="case-studies" className="border-t border-white/10 bg-blue-700">
         <SectionHeading eyebrow={marketing.caseStudiesTitle} title={marketing.caseStudiesIntro} />
         <div className="mt-12 grid gap-8 sm:grid-cols-2">
           {marketing.caseStudies.map((cs, i) => (
