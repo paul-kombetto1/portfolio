@@ -27,7 +27,10 @@ export function SoundToggle({ label, playingLabel }: { label: string; playingLab
 
   return (
     <>
-      <audio ref={audioRef} src={`${BASE_PATH}/media/audio/main-theme.mp3`} loop preload="none" />
+      <audio ref={audioRef} loop preload="none">
+        <source src={`${BASE_PATH}/media/audio/main-theme.mp3`} type="audio/mpeg" />
+        <source src={`${BASE_PATH}/media/audio/main-theme.m4a`} type="audio/mp4" />
+      </audio>
       <button
         type="button"
         onClick={toggle}
