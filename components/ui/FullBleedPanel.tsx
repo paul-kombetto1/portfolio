@@ -5,7 +5,7 @@ import { SplitReveal } from "@/components/ui/SplitReveal";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ACCENT_TEXT, type SpaceVariant } from "@/components/ui/accent";
 
-// "dark" is the bold treatment — rendered in the brand blue, not black.
+// "light" = black canvas (bg-paper), "dark" = the bold brand-blue treatment.
 const THEMES: Record<"light" | "dark", { bg: string; text: string; sub: string; border: string }> = {
   light: { bg: "bg-paper", text: "text-ink-900", sub: "text-ink-500", border: "border-ink-200/70" },
   dark: { bg: "bg-blue-700", text: "text-white", sub: "text-white/70", border: "border-white/15" },

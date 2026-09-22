@@ -5,10 +5,10 @@ import { MediaSlot } from "@/components/ui/MediaSlot";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
-export function SelectedWork({ content, lang }: { content: SelectedWorkContent; lang: Lang }) {
+export function SelectedWork({ content, lang, eyebrow }: { content: SelectedWorkContent; lang: Lang; eyebrow: string }) {
   return (
     <div>
-      <SectionHeading eyebrow="Selected work" title={content.title} />
+      <SectionHeading eyebrow={eyebrow} title={content.title} />
       <div className="mt-12 grid gap-8 lg:grid-cols-3">
         {content.items.map((item, i) => (
           <RevealOnScroll key={item.title} delay={i * 0.08}>

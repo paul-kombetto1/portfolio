@@ -36,7 +36,7 @@ export function ExploreOverlay({
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[60] flex flex-col bg-black text-white"
+          className="fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-black text-white"
           initial={reduceMotion ? undefined : { clipPath: "circle(0% at calc(100% - 2.5rem) 2.5rem)" }}
           animate={reduceMotion ? undefined : { clipPath: "circle(150% at calc(100% - 2.5rem) 2.5rem)" }}
           exit={reduceMotion ? undefined : { clipPath: "circle(0% at calc(100% - 2.5rem) 2.5rem)" }}

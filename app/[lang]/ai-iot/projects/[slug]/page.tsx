@@ -22,19 +22,20 @@ export function generateMetadata({ params }: { params: { lang: string; slug: str
   return { title: `${project.title} · ${dict.profile.name}`, description: project.summary };
 }
 
-const LABELS: Record<string, { context: string; problem: string; concept: string; architecture: string; hardware: string; software: string; role: string; learnings: string; future: string; back: string; cta: string }> = {
+const LABELS: Record<string, { context: string; problem: string; concept: string; architecture: string; hardware: string; software: string; role: string; learnings: string; future: string; back: string; cta: string; gallery: string }> = {
   fr: {
     context: "Contexte",
     problem: "Problème",
     concept: "Concept",
     architecture: "Architecture",
     hardware: "Hardware",
-    software: "Software & Platform",
+    software: "Logiciel & plateforme",
     role: "Mon rôle",
     learnings: "Ce que j'ai appris",
     future: "Évolutions possibles",
     back: "Retour à AI & IoT",
     cta: "Voir le projet",
+    gallery: "Galerie",
   },
   en: {
     context: "Context",
@@ -48,6 +49,7 @@ const LABELS: Record<string, { context: string; problem: string; concept: string
     future: "Future improvements",
     back: "Back to AI & IoT",
     cta: "View project",
+    gallery: "Gallery",
   },
 };
 
@@ -127,7 +129,7 @@ export default function ProjectDetailPage({ params }: { params: { lang: string; 
       </Section>
 
       <Section className="border-t border-ink-200/70">
-        <SectionHeading title="Gallery" />
+        <SectionHeading title={t.gallery} />
         <div className="mt-8">
           <GalleryGrid items={project.gallery} variant="ai" />
         </div>

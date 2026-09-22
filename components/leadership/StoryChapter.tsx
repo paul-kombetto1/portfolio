@@ -20,8 +20,8 @@ export function StoryChapter({
   theme?: "light" | "dark";
 }) {
   const t = THEMES[theme];
-  const gold = theme === "light" ? "text-gold-600" : "text-gold-400";
-  const goldBorder = theme === "light" ? "border-gold-600" : "border-gold-400";
+  const gold = "text-gold-400";
+  const goldBorder = "border-gold-400";
   const rows: Array<[string, string]> = [
     [labels.situation, story.situation],
     [labels.challenge, story.challenge],

@@ -15,14 +15,17 @@ import { ContactSection } from "@/components/home/ContactSection";
 import { withLang } from "@/lib/navigation";
 
 const PANEL_THEME: Array<"light" | "dark"> = ["light", "dark", "dark"];
-const CTA_LABEL: Record<string, string> = { fr: "Explorer", en: "Explore" };
+const LABELS: Record<string, { cta: string; selectedWork: string; experience: string }> = {
+  fr: { cta: "Explorer", selectedWork: "Projets sélectionnés", experience: "Expérience" },
+  en: { cta: "Explore", selectedWork: "Selected work", experience: "Experience" },
+};
 
 export default function HomePage({ params }: { params: { lang: string } }) {
   if (!isLang(params.lang)) notFound();
   const lang = params.lang;
   const dict = getDictionary(lang);
   const { home } = dict;
-  const ctaLabel = CTA_LABEL[lang];
+  const t = LABELS[lang];
 
   return (
     <>
@@ -75,7 +78,7 @@ export default function HomePage({ params }: { params: { lang: string } }) {
               title={dimension.title}
               text={dimension.text}
               href={withLang(lang, dimension.href)}
-              cta={ctaLabel}
+              cta={t.cta}
               variant={variant}
               theme={PANEL_THEME[i]}
               media={<MediaSlot media={dimension.media} variant={variant} aspect="square" />}
@@ -85,11 +88,11 @@ export default function HomePage({ params }: { params: { lang: string } }) {
       </div>
 
       <Section className="border-t border-ink-200/70">
-        <SelectedWork content={home.selectedWork} lang={lang} />
+        <SelectedWork content={home.selectedWork} lang={lang} eyebrow={t.selectedWork} />
       </Section>
 
       <Section className="border-t border-white/10 bg-blue-700">
-        <ExperienceList content={home.experience} />
+        <ExperienceList content={home.experience} eyebrow={t.experience} />
       </Section>
 
       <Section className="border-t border-ink-200/70">

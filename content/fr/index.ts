@@ -69,7 +69,7 @@ const fr: SiteDictionary = {
       media: { alt: "Paul KOMBETTO dans son environnement de travail", label: "Intro — parcours / environnement de travail" },
     },
     story: {
-      eyebrow: "My story",
+      eyebrow: "Mon histoire",
       title: "Je n'ai jamais voulu me limiter à une seule dimension.",
       paragraphs: [
         "Ma curiosité m'a d'abord conduit vers la technologie. À l'université, les systèmes embarqués et l'IoT m'ont appris à regarder ce qui se passe derrière les applications : les capteurs, les microcontrôleurs, les données, le code et les contraintes du monde réel.",
@@ -81,7 +81,7 @@ const fr: SiteDictionary = {
       imageSide: "right",
     },
     whatIDo: {
-      title: "Different fields. One way of thinking.",
+      title: "Des domaines différents. Une seule manière de penser.",
       intro: "Mes expériences peuvent sembler différentes au premier regard. Pourtant, elles reposent sur une même approche : comprendre, structurer, construire et faire évoluer.",
       dimensions: [
         {
@@ -140,7 +140,7 @@ const fr: SiteDictionary = {
       ],
     },
     experience: {
-      title: "Learning by doing.",
+      title: "Apprendre par la pratique.",
       entries: [
         {
           organization: "KAWA Services",
@@ -177,7 +177,7 @@ const fr: SiteDictionary = {
       ],
     },
     leadershipImpact: {
-      title: "Beyond professional titles.",
+      title: "Au-delà des titres professionnels.",
       paragraphs: [
         "Certaines expériences ne tiennent pas dans une ligne de CV.",
         "Modérer une discussion, prendre la parole, coordonner une activité, lancer une initiative ou accepter une responsabilité : ce sont aussi des situations qui construisent une manière de travailler avec les autres.",
@@ -187,13 +187,13 @@ const fr: SiteDictionary = {
       imageSide: "left",
     },
     whatsNext: {
-      title: "Where I'm going.",
+      title: "Où je vais.",
       paragraphs: [
         "Mon parcours évolue vers un point de rencontre entre technologie, management et transformation digitale.",
         "Je veux continuer à comprendre la technologie, mais aussi les organisations, les personnes et les enjeux qui permettent à un projet technologique de créer une vraie valeur.",
         "À terme, je souhaite contribuer à la conception, au pilotage et à la transformation de projets technologiques avec un impact concret.",
       ],
-      signature: "Technology × Management × Impact.",
+      signature: "Technologie × Management × Impact.",
       media: { alt: "Vision et perspectives futures", label: "Future / vision" },
       imageSide: "right",
     },
@@ -212,7 +212,7 @@ const fr: SiteDictionary = {
     hero: {
       eyebrow: "AI & IoT",
       title: "AI & IoT",
-      subtitle: "From connected devices to intelligent systems.",
+      subtitle: "Des objets connectés aux systèmes intelligents.",
       text: "Mon parcours technique commence par une question simple : comment utiliser la technologie pour observer, comprendre et agir sur le monde réel ?",
       media: { alt: "Systèmes connectés et intelligents", label: "Hero AI & IoT" },
     },
@@ -232,7 +232,7 @@ const fr: SiteDictionary = {
       { label: "Langages", value: "Python · C/C++ · Java" },
       { label: "Terrain", value: "Arduino · ESP32 · Computer Vision" },
     ],
-    projectsTitle: "Projects",
+    projectsTitle: "Projets",
     projectsIntro: "Chaque projet technique est présenté comme une histoire : contexte, problème, concept, architecture et résultats.",
     projects: [
       {
@@ -276,7 +276,7 @@ const fr: SiteDictionary = {
     hero: {
       eyebrow: "Digital Marketing",
       title: "Digital Marketing",
-      subtitle: "From ideas to digital presence.",
+      subtitle: "Des idées à la présence digitale.",
       text: "J'aime comprendre comment un produit trouve son public, comment une entreprise raconte sa valeur et comment une stratégie se transforme en actions concrètes.",
       media: { alt: "Stratégie digitale et marketing", label: "Hero Marketing" },
     },
@@ -291,7 +291,7 @@ const fr: SiteDictionary = {
       media: { alt: "Parcours marketing de Paul KOMBETTO", label: "Marketing journey" },
       imageSide: "right",
     },
-    caseStudiesTitle: "Case studies",
+    caseStudiesTitle: "Études de cas",
     caseStudiesIntro: "Montrer le raisonnement, pas seulement les publications : le problème, la stratégie, l'exécution et les leçons apprises.",
     caseStudies: [
       {
@@ -348,7 +348,7 @@ const fr: SiteDictionary = {
     hero: {
       eyebrow: "Leadership & Volunteering",
       title: "Leadership & Volunteering",
-      subtitle: "Leadership is not a title. It's what you choose to do when something needs to move.",
+      subtitle: "Le leadership n'est pas un titre. C'est ce qu'on choisit de faire quand les choses doivent avancer.",
       text: "Je m'intéresse à la communication, à la coordination, à la prise de responsabilité et aux initiatives qui permettent aux personnes et aux projets d'avancer ensemble.",
       media: { alt: "Leadership et engagement communautaire", label: "Hero Leadership" },
     },
@@ -362,16 +362,16 @@ const fr: SiteDictionary = {
       media: { alt: "Histoire de leadership de Paul KOMBETTO", label: "Leadership story" },
       imageSide: "left",
     },
-    experiencesTitle: "Experiences",
+    experiencesTitle: "Expériences",
     experiences: [
       {
         slug: "gavel-club",
         organization: "Toastmasters Gavel Club Ganiatou Sambaou, IFRI-UAC",
         role: "Vice-President of Public Relations",
         period: "Janvier — Octobre 2025",
-        title: "Speak. Listen. Adapt. Create space.",
+        title: "Parler. Écouter. S'adapter. Créer un espace.",
         text: "Préparer et modérer des sessions, organiser des activités et contribuer à la vie du club m'ont appris à structurer mes idées, adapter mon message et créer un espace où les autres peuvent s'exprimer. En tant que Vice-Président des relations publiques, j'ai géré les communications média et coordonné la communication interne et la logistique entre les membres et le bureau exécutif.",
-        signature: "Speak clearly. Listen actively. Adapt to the room. Create space for others.",
+        signature: "Parler clairement. Écouter activement. S'adapter à la salle. Créer un espace pour les autres.",
         media: { alt: "Session du Gavel Club", label: "Gavel Club / session" },
         gallery: [
           { alt: "Session de prise de parole", label: "Gallery — session" },
@@ -382,7 +382,7 @@ const fr: SiteDictionary = {
     ],
     stories: [
       {
-        title: "Taking responsibility",
+        title: "Prendre ses responsabilités",
         situation: "Une équipe avait plusieurs besoins à couvrir avec peu de personnes disponibles.",
         challenge: "Maintenir les activités, contribuer à la structuration et participer à la recherche de nouvelles personnes.",
         action: "J'ai pris plusieurs responsabilités et participé à la recherche et à l'intégration de nouveaux membres.",
@@ -398,7 +398,7 @@ const fr: SiteDictionary = {
         media: { alt: "Modération d'une discussion", label: "Story — modération / discussion" },
       },
     ],
-    volunteeringTitle: "Volunteering",
+    volunteeringTitle: "Bénévolat",
     volunteeringIntro: "Le bénévolat est pour moi un espace d'apprentissage autant qu'un espace de contribution. Il permet de travailler avec des profils différents, de servir une communauté et de transformer des idées en initiatives.",
     volunteering: [
       {
@@ -412,7 +412,7 @@ const fr: SiteDictionary = {
     ],
   },
   footer: {
-    tagline: "Technology × Management × Impact.",
+    tagline: "Technologie × Management × Impact.",
     rights: "Tous droits réservés.",
   },
 };

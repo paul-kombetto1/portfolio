@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Lora, Poppins, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const lora = Lora({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   display: "swap",
 });
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-sans",
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
@@ -25,12 +26,12 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://paul-kombetto1.github.io/portfolio/"),
-  title: "Paul Kombetto",
+  title: "Paul KOMBETTO",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${fraunces.variable} ${inter.variable} ${plexMono.variable}`}>
+    <html lang="fr" className={`${lora.variable} ${poppins.variable} ${plexMono.variable}`}>
       <body>{children}</body>
     </html>
   );

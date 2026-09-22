@@ -38,13 +38,12 @@ export default function ExperienceDetailPage({ params }: { params: { lang: strin
 
   return (
     <>
-      <section className="relative overflow-hidden bg-blue-700 py-20 text-white sm:py-28">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-800 via-blue-700 to-blue-500" />
+      <section className="relative overflow-hidden bg-black py-20 text-white sm:py-28">
         <div
-          className="pointer-events-none absolute inset-0 opacity-80"
-          style={{ background: "radial-gradient(55% 45% at 15% 20%, rgba(212,175,55,0.22), transparent)" }}
+          className="pointer-events-none absolute inset-0 opacity-70"
+          style={{ background: "radial-gradient(55% 45% at 15% 20%, rgba(212,175,55,0.18), transparent), radial-gradient(45% 40% at 90% 85%, rgba(3,126,243,0.2), transparent)" }}
         />
-        <div className="grain-surface pointer-events-none absolute inset-0 text-white/[0.08]" />
+        <div className="grain-surface pointer-events-none absolute inset-0 text-white/[0.06]" />
         <div className="relative z-10 mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12">
           <RevealOnScroll>
             <Link href={withLang(params.lang, "/leadership")} className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white">

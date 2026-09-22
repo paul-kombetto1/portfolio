@@ -9,20 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Dark scale: text-ink-900 (headings) resolves near-white, text-ink-600
+        // (body copy) resolves light-gray, border-ink-200 (dividers) resolves a
+        // low-contrast dark gray — tuned for the black/blue canvas.
         ink: {
-          DEFAULT: "#0E1116",
-          50: "#F4F5F6",
-          100: "#E4E6E9",
-          200: "#C6CAD1",
-          300: "#9BA2AD",
-          400: "#6B7280",
-          500: "#4A5058",
-          600: "#363B42",
-          700: "#252930",
-          800: "#181B20",
-          900: "#0E1116",
+          DEFAULT: "#F6F7F8",
+          50: "#0E1116",
+          100: "#181B20",
+          200: "#262A31",
+          300: "#3C424B",
+          400: "#8791A0",
+          500: "#A6AEB8",
+          600: "#C2C8D0",
+          700: "#DADEE3",
+          800: "#ECEEF0",
+          900: "#F6F7F8",
         },
-        paper: "#FFFFFF",
+        paper: "#000000",
         blue: {
           DEFAULT: "#037EF3",
           50: "#E6F2FE",

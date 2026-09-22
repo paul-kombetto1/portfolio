@@ -3,10 +3,10 @@ import { MediaSlot } from "@/components/ui/MediaSlot";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
-export function ExperienceList({ content }: { content: ExperienceContent }) {
+export function ExperienceList({ content, eyebrow }: { content: ExperienceContent; eyebrow: string }) {
   return (
     <div>
-      <SectionHeading eyebrow="Experience" title={content.title} />
+      <SectionHeading eyebrow={eyebrow} title={content.title} />
       <div className="mt-12 space-y-10">
         {content.entries.map((entry, i) => (
           <RevealOnScroll key={`${entry.organization}-${entry.role}`} delay={i * 0.05}>

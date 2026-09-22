@@ -21,7 +21,7 @@ export function generateMetadata({ params }: { params: { lang: string; slug: str
   return { title: `${cs.title} · ${dict.profile.name}`, description: cs.tagline };
 }
 
-const LABELS: Record<string, { context: string; challenge: string; approach: string; work: string; lesson: string; back: string }> = {
+const LABELS: Record<string, { context: string; challenge: string; approach: string; work: string; lesson: string; back: string; gallery: string }> = {
   fr: {
     context: "Contexte",
     challenge: "Défi",
@@ -29,6 +29,7 @@ const LABELS: Record<string, { context: string; challenge: string; approach: str
     work: "Travail réalisé",
     lesson: "Leçon",
     back: "Retour à Digital Marketing",
+    gallery: "Galerie",
   },
   en: {
     context: "Context",
@@ -37,6 +38,7 @@ const LABELS: Record<string, { context: string; challenge: string; approach: str
     work: "Work done",
     lesson: "Lesson",
     back: "Back to Digital Marketing",
+    gallery: "Gallery",
   },
 };
 
@@ -93,7 +95,7 @@ export default function CaseStudyDetailPage({ params }: { params: { lang: string
       </Section>
 
       <Section className="border-t border-white/10 bg-blue-700">
-        <SectionHeading title="Gallery" />
+        <SectionHeading title={t.gallery} />
         <div className="mt-8">
           <GalleryGrid items={cs.gallery} variant="marketing" />
         </div>
